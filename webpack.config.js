@@ -35,5 +35,6 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
+    // writeToDisk: true,
   },
 };

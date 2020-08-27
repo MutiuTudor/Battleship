@@ -1,22 +1,16 @@
 import React from "react";
-import { createStore } from "redux";
-import { appReducer } from "../Redux/reducers.js";
 import { Provider } from "react-redux";
-import { Ships } from "./ships";
-
-
-const store = createStore(
-  appReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+import store from "./Redux/stores";
+import { Ships } from "./Ships";
+import { Board } from "./Board";
 
 const App = () => {
   return (
     <Provider store={store}>
-      <div>
-        <h1 className="title">Battleship</h1>
+      <Ships></Ships>
+      <div className="board">
+        <Board/>
       </div>
-      <Ships />
     </Provider>
   );
 };
