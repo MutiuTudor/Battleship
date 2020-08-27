@@ -7,7 +7,7 @@ import { Board } from "./Board";
 const App = () => {
   return (
     <Provider store={store}>
-      <Ships></Ships>
+      <Ships/>
       <div className="board">
         <Board/>
       </div>
