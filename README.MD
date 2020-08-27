@@ -1,2 +1,1 @@
-# battleships
-react-redux game
+
